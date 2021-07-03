@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { MatToolbarModule } from '@angular/material';
 import { MatButtonModule, MatGridListModule, MatSliderModule } from '@angular/material';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
