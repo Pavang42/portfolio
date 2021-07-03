@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { MatToolbarModule } from '@angular/material';
 import { MatButtonModule, MatGridListModule, MatSliderModule } from '@angular/material';
+import { FlexLayoutModule } from '@angular/flex-layout';
+
 import { HomeComponent } from './home/home.component';
 
 @NgModule({
@@ -20,7 +22,8 @@ import { HomeComponent } from './home/home.component';
     MatToolbarModule,
     MatButtonModule,
     MatGridListModule,
-    MatSliderModule
+    MatSliderModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
