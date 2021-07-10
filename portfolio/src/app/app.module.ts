@@ -9,12 +9,14 @@ import { MatButtonModule, MatGridListModule, MatSliderModule } from '@angular/ma
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { HomeComponent } from './home/home.component';
+import { CountryComponent } from './country/country.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    HomeComponent
+    HomeComponent,
+    CountryComponent
   ],
   imports: [
     BrowserModule,
