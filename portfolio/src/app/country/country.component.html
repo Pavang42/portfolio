@@ -1,3 +1,40 @@
-<p>
-  country works!
-</p>
+<div class="container">
+  <div class="row" *ngIf="countriesVisited">
+    <div class="col-sm-12 col-md-12 col-lg-12">
+      <h1>Visited Countries</h1>
+    </div>
+  </div>
+  <div class="row" *ngIf="countriesVisited">
+    <mat-card *ngFor="let country of countriesVisited" class="col-sm-12 col-md-12 col-lg-3 mt-5 ml-5 country-card">
+      <mat-card-header>
+        <div mat-card-avatar class="country-header-image"></div>
+        <mat-card-title>{{country.name | uppercase}}</mat-card-title>
+      </mat-card-header>
+      <img src="assets/{{country.imageUrl}}" width="380" height="300" alt={{country.name}}>
+      <mat-card-content>
+        <h2>Capital</h2>
+        <h6>{{country.capital}}</h6>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div class="row mt-5" *ngIf="countries">
+    <div class="col-sm-12 col-md-12 col-lg-12">
+      <h1>Countries to be Visited</h1>
+    </div>
+  </div>
+  <div class="row" *ngIf="countries">
+    <mat-card *ngFor="let country of countries" class="col-sm-12 col-md-12 col-lg-3 mt-5 ml-5 country-card">
+      <mat-card-header>
+        <div mat-card-avatar class="country-header-image"></div>
+        <mat-card-title>{{country.name | uppercase}}</mat-card-title>
+        <span class="flex-spacer"></span>
+        <span (click)="updateCountryAsVisited(country)"><i class="fa fa-edit fa-lg"></i></span>
+      </mat-card-header>
+      <img src="assets/{{country.imageUrl}}" width="380" height="300" alt={{country.name}}>
+      <mat-card-content>
+        <h2>Capital</h2>
+        <h6>{{country.capital}}</h6>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

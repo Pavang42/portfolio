@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { MatToolbarModule } from '@angular/material';
 import { MatButtonModule, MatGridListModule, MatSliderModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatCardModule } from '@angular/material/card';
 
 import { HomeComponent } from './home/home.component';
 import { CountryComponent } from './country/country.component';
@@ -25,7 +26,8 @@ import { CountryComponent } from './country/country.component';
     MatButtonModule,
     MatGridListModule,
     MatSliderModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
