@@ -21,4 +21,8 @@ export class CountryService {
   getCountriesTobeVisited() {
     return of(COUNTRIES.filter((country) => !country.isVisited)).toPromise();
   }
+
+  getCountryDetailsById(id: string) {
+    return of(COUNTRIES.filter((country) => (country.id === id))[0]);
+  }
 }

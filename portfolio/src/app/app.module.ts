@@ -11,13 +11,15 @@ import { MatCardModule } from '@angular/material/card';
 
 import { HomeComponent } from './home/home.component';
 import { CountryComponent } from './country/country.component';
+import { UpdateCountryComponent } from './update-country/update-country.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    CountryComponent
+    CountryComponent,
+    UpdateCountryComponent
   ],
   imports: [
     BrowserModule,

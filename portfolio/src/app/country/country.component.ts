@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { CountryService } from '../services/country.service';
 import { Country } from '../shared/country';
 
@@ -12,7 +13,8 @@ export class CountryComponent implements OnInit {
   countries: Country[] = [];
   countriesVisited: Country[] = [];
   constructor(
-    private countryService: CountryService
+    private countryService: CountryService,
+    private route: Router
   ) { }
 
   ngOnInit() {
@@ -25,7 +27,7 @@ export class CountryComponent implements OnInit {
   }
 
   updateCountryAsVisited(country: Country) {
-    console.log(country, 'country');
+    this.route.navigate(['/country', country.id]);
   }
 
 }
