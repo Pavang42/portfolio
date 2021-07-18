@@ -8,10 +8,12 @@ import { MatToolbarModule } from '@angular/material';
 import { MatButtonModule, MatGridListModule, MatSliderModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatCardModule } from '@angular/material/card';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 import { HomeComponent } from './home/home.component';
 import { CountryComponent } from './country/country.component';
 import { UpdateCountryComponent } from './update-country/update-country.component';
+import { BackgroundComponent } from './background/background.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,8 @@ import { UpdateCountryComponent } from './update-country/update-country.componen
     HeaderComponent,
     HomeComponent,
     CountryComponent,
-    UpdateCountryComponent
+    UpdateCountryComponent,
+    BackgroundComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +32,8 @@ import { UpdateCountryComponent } from './update-country/update-country.componen
     MatGridListModule,
     MatSliderModule,
     FlexLayoutModule,
-    MatCardModule
+    MatCardModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]
