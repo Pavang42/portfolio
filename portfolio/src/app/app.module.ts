@@ -15,6 +15,7 @@ import { HomeComponent } from './home/home.component';
 import { CountryComponent } from './country/country.component';
 import { UpdateCountryComponent } from './update-country/update-country.component';
 import { BackgroundComponent } from './background/background.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { BackgroundComponent } from './background/background.component';
     HomeComponent,
     CountryComponent,
     UpdateCountryComponent,
-    BackgroundComponent
+    BackgroundComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
