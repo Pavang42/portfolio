@@ -9,6 +9,7 @@ import { MatButtonModule, MatGridListModule, MatSliderModule } from '@angular/ma
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatCardModule } from '@angular/material/card';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { HomeComponent } from './home/home.component';
 import { CountryComponent } from './country/country.component';
@@ -33,7 +34,8 @@ import { BackgroundComponent } from './background/background.component';
     MatSliderModule,
     FlexLayoutModule,
     MatCardModule,
-    MatExpansionModule
+    MatExpansionModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

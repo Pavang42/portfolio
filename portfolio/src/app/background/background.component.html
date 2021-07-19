@@ -1,8 +1,23 @@
 
 <div class="container">
   <div class="row">
-    <p>
-      background works!
-    </p>
+    <h2>Professional Experience</h2><br/><br/>
+    <mat-accordion class="example-headers-align">
+      <mat-expansion-panel *ngFor="let experience of EXPERIENCES">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <h4>{{experience.company}}</h4>
+          </mat-panel-title>
+          <mat-panel-description>{{experience.duration}}</mat-panel-description>
+        </mat-expansion-panel-header>
+        <h4>Description:</h4>
+        <p>{{experience.description}}</p>
+        <h4>Responsibilities:</h4>
+        <ul>
+          <li *ngFor="let responsibility of experience.responsibilities">{{responsibility}}</li>
+        </ul>
+        <h4>Environment:</h4> <span>{{experience.environment}}</span>
+      </mat-expansion-panel>
+    </mat-accordion>
   </div>
 </div>

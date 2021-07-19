@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { MatAccordion } from '@angular/material/expansion';
+import { EXPERIENCES } from '../shared/experiences';
 
 @Component({
   selector: 'app-background',
@@ -7,6 +9,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BackgroundComponent implements OnInit {
 
+  EXPERIENCES = EXPERIENCES;
+  @ViewChild(MatAccordion) accordion: MatAccordion;
   constructor() { }
 
   ngOnInit() {
